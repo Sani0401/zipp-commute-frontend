@@ -1,0 +1,77 @@
+.Signup__mainContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.Signup__leftContainer{
+flex: 1;
+padding: 100px;
+border-right: 1px solid grey ;
+}
+
+.Signup__leftContainer__logoIcon{
+    height: 100px;
+    width: 100px;
+}
+
+.Signup__leftContainer__description{
+    margin: 0;
+    width: 500px;
+    font-size: 20px;
+}
+
+.Signup__leftContainer__decriptionTitle{
+    font-size: 20px;
+}
+
+.Signup__leftContainer__decriptionList li{
+margin-top: 10px;
+font-size: 17px;
+}
+
+.Signup__rightContainer{
+    flex: 1;
+   padding: 50px;
+}
+
+.signup__rightContainerTitle{
+    margin: 0;
+    font-size: 20px;
+}
+
+.signup__rightContainerDescription{
+    margin: 0;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.signup__rightContainerInputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.signup__rightContainerInputContainer input{
+    height: 30px;
+}
+
+.signup__rightContainerInputContainer span{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.SignupContainer__input{
+    width: 360px;
+}
+
+.SignupButton{
+    margin-left: 20%;
+    margin-top: 30px;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+}
