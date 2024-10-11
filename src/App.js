@@ -7,6 +7,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Pages.Signup />} />
         <Route path="/login" element={<Pages.Login />} />
+        <Route path="/company-details" element={<Pages.CompanyDetails />} />
+
       </Routes>
     </Router>
   );

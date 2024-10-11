@@ -1,0 +1,59 @@
+.CompanyDetails__mainContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.CompanyDetails__leftContainer {
+  display: flex;
+  flex: 1;
+  border-right: 1px solid rgba(128, 128, 128, 0.5); /* 128,128,128 is grey, and 0.5 is 50% opacity */
+}
+
+.CompanyDetails__rightContainer {
+  display: flex;
+  flex: 1;
+}
+.CompanyDetails__rightContainer__innerContainer {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+span {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+span input {
+  width: 450px;
+  height: 25px;
+  padding: 5px;
+}
+.seperate_column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-right: 50px;
+}
+
+.seperate_column input {
+  width: 200px;
+  height: 25px;
+}
+select {
+  height: 30px;
+  width: 465px;
+}
+
+.rightContainer__submit__button{
+    height: 50px;
+    width: 300px;
+    cursor: pointer;
+    margin-left: 20%;
+    margin-top: 20px;
+    padding: 5px;
+}

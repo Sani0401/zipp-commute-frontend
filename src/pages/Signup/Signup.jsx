@@ -1,8 +1,13 @@
 import React from "react";
 import "./Signup.css";
 import Images from "../../Exports/Assets";
-
+import { useNavigate } from "react-router-dom";
 function Signup() {
+  const navigate = useNavigate();
+
+  const handleSignupClick = () => {
+    navigate("/company-details");
+  };
   return (
     <div className="Signup__mainContainer">
       <div className="Signup__leftContainer">
@@ -95,7 +100,10 @@ function Signup() {
             className="SignupContainer__input"
           />
         </div>
-        <button className="SignupButton"> Signup For Now</button>
+        <button className="SignupButton" onClick={handleSignupClick}>
+          {" "}
+          Signup For Now
+        </button>
       </div>
     </div>
   );
