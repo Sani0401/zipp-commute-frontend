@@ -1,0 +1,6 @@
+.SideBar__mainContainer{
+    height: 100vh;
+    width: 150px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}

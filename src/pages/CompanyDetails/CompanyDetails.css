@@ -26,7 +26,7 @@ span {
   gap: 5px;
 }
 
-span input {
+.span_input {
   width: 450px;
   height: 25px;
   padding: 5px;

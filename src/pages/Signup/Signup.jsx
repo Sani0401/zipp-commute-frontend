@@ -101,7 +101,7 @@ function Signup() {
           />
         </div>
         <button className="SignupButton" onClick={handleSignupClick}>
-          {" "}
+         
           Signup For Now
         </button>
       </div>

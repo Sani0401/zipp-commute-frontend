@@ -1,0 +1,7 @@
+.Header__mainContainer {
+    height: 70px;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}

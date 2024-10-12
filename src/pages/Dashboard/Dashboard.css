@@ -1,0 +1,24 @@
+.Dashboard__mainContainer {
+    display: flex; /* Set the container to use flexbox */
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    
+  }
+  
+  .Dashboard__content {
+    display: flex;
+    flex-direction: column; /* Stack header and content vertically */
+    flex-grow: 1; /* Allow this section to take the remaining space */
+  }
+  
+  .Dashboard__mainContainer > .Components__SideBar {
+    width: 250px; /* Set a fixed width for the sidebar */
+    height: 100%; /* Full height */
+  }
+  
+  .Dashboard__mainContainer > .Components__Header {
+    height: 60px; /* Set a height for the header */
+    width: 100%; /* Full width within the content area */
+    border-bottom: 1px solid black;
+  }
+  
