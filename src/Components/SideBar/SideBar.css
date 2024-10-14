@@ -1,6 +1,32 @@
 .SideBar__mainContainer{
     height: 100vh;
-    width: 150px;
+    width: 200px;
     border: 1px solid black;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.SideBar__logoContainer{
+    border-bottom: 1px solid grey;
+    height: 80px;
+}
+
+.SideBar__listElement{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+
+padding: 10px;
+
+}
+
+.SideBar__listElement p {
+    text-decoration: underline;
+    text-underline-offset: 10px; /* Adjust the value as needed */
+    cursor: pointer;
+    
 }
