@@ -26,7 +26,7 @@ function CompanyDetails() {
     try {
       const response = await axios.post("http://localhost:3001/api/v1/auth/add-enterprise-details", {
         ...companyDetails,
-        adminID: "97e48973-f873-42a0-9394-f018c854282a", // Replace with dynamic admin ID if needed
+        adminID: localStorage.getItem("userId"), // Replace with dynamic admin ID if needed
       });
 
       if (response.status === 200) {

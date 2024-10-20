@@ -1,0 +1,90 @@
+.Login__mainContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.Login__leftContainer {
+    height: 100vh;
+    flex: 1;
+    border-right: 1px solid black;
+}
+
+.Login__rightContainer {
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    align-items: center; /* Centers the input container vertically */
+    justify-content: center; /* Centers the input container horizontally */
+}
+
+.Login__rightContainer__inputContainer {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+}
+
+.Login__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.Login__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Login__inputs input {
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Login__forgotPassword {
+    font-size: 14px;
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.Login__forgotPassword:hover {
+    text-decoration: underline;
+}
+
+.Login__LoginButton {
+    height: 40px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Login__LoginButton:hover {
+    background-color: #0056b3;
+}
+
+.Login__signupPrompt {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.Login__signupPrompt a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.Login__signupPrompt a:hover {
+    text-decoration: underline;
+}

@@ -8,7 +8,18 @@ function Dashboard() {
       <Components.SideBar />
       <div className='Dashboard__content'>
         <Components.Header />
-        {/* Add your other components below the header */}
+        <div className='Dashboard__displayCards'>
+          <div className='Dashboard__searchEmployees'>
+            <input type="text" placeholder='Search Employees' />
+            <button>Search</button>
+          </div>
+          <div className='Dashboard__dataCards'>
+            <Components.DataCards typeOfData="Number of Users" dataInNumber="300+"/>
+            <Components.DataCards typeOfData="Number of Rides" dataInNumber="300+"/>
+            <Components.DataCards typeOfData="Number of Drivers" dataInNumber="300+"/>
+            
+          </div>
+        </div>
       </div>
     </div>
   )

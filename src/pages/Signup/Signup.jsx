@@ -35,7 +35,9 @@ function Signup() {
     try {
       // Replace with your API endpoint
       const response = await axios.post("http://localhost:3001/api/v1/auth/signup", userData);
-      console.log("Signup successful:", response.data);
+      console.log("This is the API response: ", response);
+      
+      localStorage.setItem('userId', response.data.userId);
       navigate("/company-details"); // Navigate after successful signup
     } catch (error) {
       console.error("Error during signup:", error);
@@ -152,7 +154,9 @@ function Signup() {
             value={country}
             onChange={(e) => setCountry(e.target.value)}
           />
+         
         </div>
+        <p className="SignupContainer__LoginButton">Already Have An Account? <a href="/login">Login</a> </p>
         <button className="SignupButton" onClick={handleSignup}>
           Signup For Now
         </button>

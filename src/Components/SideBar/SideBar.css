@@ -1,32 +1,35 @@
-.SideBar__mainContainer{
+.SideBar__mainContainer {
     height: 100vh;
     width: 200px;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
 
-}
-
-.SideBar__logoContainer{
-    border-bottom: 1px solid grey;
+  }
+  
+  .SideBar__logoContainer {
+    border-bottom: 1px solid #ccc;
     height: 80px;
-}
-
-.SideBar__listElement{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: 20px;
-
-padding: 10px;
-
-}
-
-.SideBar__listElement p {
-    text-decoration: underline;
-    text-underline-offset: 10px; /* Adjust the value as needed */
+  }
+  
+  .SideBar__listElement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .SideBar__listElement:hover {
+    background-color: rgb(59 130 246);
+    color: white;
+  }
+  
+  .SideBar__listElement p {
     cursor: pointer;
-    
-}
+    text-align: left; /* Updated */
+    width: 100%; /* Ensures the text spans the width of the container */
+    padding-left: 20px; /* Optional: Padding for better visual alignment */
+  }
+  

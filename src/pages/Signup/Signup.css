@@ -53,7 +53,11 @@ font-size: 17px;
 }
 
 .signup__rightContainerInputContainer input{
-    height: 30px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .signup__rightContainerInputContainer span{
@@ -66,9 +70,15 @@ font-size: 17px;
     width: 360px;
 }
 
+.SignupContainer__LoginButton{
+    margin: 0px;
+    font-size: 13px;
+
+}
+
 .SignupButton{
     margin-left: 20%;
-    margin-top: 30px;
+    margin-top: 20px;
     height: 40px;
     width: 200px;
     border-radius: 5px;
