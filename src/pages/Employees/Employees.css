@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.Employees__mainContainer {
+  display: flex; /* Align the sidebar and content side by side */
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  font-family: "Montserrat", serif;
+}
+
+.Employees__content {
+  display: flex;
+  flex-direction: column; /* Stack the header and body vertically */
+  flex-grow: 1; /* Take up the remaining space next to the sidebar */
+}
+
+.Employees__mainContainer > .Components__SideBar {
+  width: 250px; /* Fixed width for the sidebar */
+  height: 100%; /* Full height */
+}
+
+.Employees__mainContainer > .Components__Header {
+  height: 60px; /* Set height for the header */
+  width: 100%; /* Full width within the content area */
+  border-bottom: 1px solid black;
+}
+
+.Employees__body {
+  flex-grow: 1; /* Allow this section to grow */
+  overflow-y: auto; /* Enable scrolling if the content overflows */
+}
+
+.Employees__body h2 {
+  margin-bottom: 20px;
+}
+.Employees__firstTab {
+  height: 70px;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Employees__firstTab p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.Employees__firstTab__filters {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.Employess_firstTab__addEmployeesButton {
+  background-color: rgb(59 130 246);
+  border: none;
+  height: 35px;
+  width: 120px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.Employess_firstTab__addEmployeesButton:hover {
+  background-color: rgb(55, 109, 196);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Example of a shadow */
+}
+
+.Filters__exportImportDatas {
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.Filters__exportImportDatas:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Example of a shadow */
+}
+
+.Filters__exportImportDatas p {
+  margin-top: 10px;
+}
+
+.Employees__detailHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Create 4 equal columns */
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20px; /* Add padding to the sides */
+    font-weight: 800;
+    font-size: 15px;
+  }
+  
+  .Employees__detailHeader p {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .Employees_details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Create 4 equal columns, same as header */
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .Employees_details:hover {
+    background-color: rgba(204, 204, 204, 0.15);
+    cursor: pointer;
+  }
+  
+  
+  .Employees_details span.EmployeeImageName {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .EmployeeImageName img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px; /* Add space between the image and the name */
+  }
+  
+  .Employees_details p {
+    margin: 0; /* Remove default margin */
+    font-weight: 500;
+    font-size: 15px;
+  }
+  

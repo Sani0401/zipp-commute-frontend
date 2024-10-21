@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .Dashboard__mainContainer {
     display: flex; /* Set the container to use flexbox */
     height: 100vh; /* Full height of the viewport */
@@ -52,7 +54,7 @@
   }
 
   .Dashboard__displayCards button:hover{
-    background-color:rgb(20 100 230);
+    background-color: rgb(55, 109, 196);
   }
 
   .Dashboard__dataCards {

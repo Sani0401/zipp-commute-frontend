@@ -14,9 +14,9 @@ function Dashboard() {
             <button>Search</button>
           </div>
           <div className='Dashboard__dataCards'>
-            <Components.DataCards typeOfData="Number of Users" dataInNumber="300+"/>
-            <Components.DataCards typeOfData="Number of Rides" dataInNumber="300+"/>
-            <Components.DataCards typeOfData="Number of Drivers" dataInNumber="300+"/>
+            <Components.DataCards typeOfData="Number of Users" dataInNumber="300+" percentage="10%" color="green"/>
+            <Components.DataCards typeOfData="Number of Rides" dataInNumber="300+" percentage="10%" color="red" />
+            <Components.DataCards typeOfData="Number of Drivers" dataInNumber="300+" percentage="10%" color="green"/>
             
           </div>
         </div>

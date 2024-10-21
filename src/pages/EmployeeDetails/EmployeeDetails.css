@@ -1,0 +1,41 @@
+.EmployeeDetail__mainContainer {
+    display: flex; /* Align the sidebar and content side by side */
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    font-family: "Montserrat", sans-serif; /* Ensure consistent font */
+  }
+  
+  .EmployeeDetail__content {
+    display: flex;
+    flex-direction: column; /* Stack the header and body vertically */
+    flex-grow: 1; /* Take up the remaining space next to the sidebar */
+  }
+  
+  .EmployeeDetail__mainContainer > .Components__SideBar {
+    width: 250px; /* Fixed width for the sidebar */
+    height: 100%; /* Full height */
+  }
+  
+  .EmployeeDetail__mainContainer > .Components__Header {
+    height: 60px; /* Set height for the header */
+    width: 100%; /* Full width within the content area */
+    border-bottom: 1px solid black;
+  }
+  
+  .EmployeeDetail__body {
+    flex-grow: 1; /* Allow this section to grow */
+    padding: 20px; /* Add padding for content spacing */
+    box-sizing: border-box; /* Ensure padding and width are handled correctly */
+    overflow-y: auto; /* Enable scrolling if the content overflows */
+  }
+  
+  .EmployeeDetail__body h2 {
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .EmployeeDetail__body p {
+    font-weight: 500; /* Make the text slightly bolder */
+    font-size: 16px; /* Adjust font size for readability */
+    margin: 5px 0; /* Space between paragraphs */
+  }
+  
