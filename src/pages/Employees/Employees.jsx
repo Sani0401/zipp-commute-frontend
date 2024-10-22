@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Employees.css";
 import Components from "../../Exports/Components";
 
 function Employees() {
+  const navigate = useNavigate();
   return (
     <div className="Employees__mainContainer">
       <Components.SideBar />
@@ -13,11 +14,13 @@ function Employees() {
           <div className="Employees__firstTab">
             <p>Employees List</p>
             <div className="Employees__firstTab__filters">
-              <button className="Employess_firstTab__addEmployeesButton">
+              <button className="Employess_firstTab__addEmployeesButton" onClick={() =>{
+                navigate("/add-employees")
+              }}>
                 Add Employees
               </button>
               <div className="Filters__exportImportDatas">
-                <p>...</p>
+              <p>...</p>
               </div>
             </div>
           </div>
@@ -27,18 +30,17 @@ function Employees() {
             <p>Department</p>
             <p>Employee Status</p>
           </div>
-          <div className="Employees_details">
-            <span className="EmployeeImageName">
-              <img src="" alt="" />
-              <Link to="/employees/1"> 
+          <Link to="/employees/1">
+            <div className="Employees_details">
+              <span className="EmployeeImageName">
+                <img src="" alt="" />
                 <p>Sanihussain Patel</p>
-              </Link>
-            </span>
-            <p>Sanihussain.patel@spyne.ai</p>
-            <p>Product & Tech</p>
-            <p>Active</p>
-          </div>
-          
+              </span>
+              <p>Sanihussain.patel@spyne.ai</p>
+              <p>Product & Tech</p>
+              <p>Active</p>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

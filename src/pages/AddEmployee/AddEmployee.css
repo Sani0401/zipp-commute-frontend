@@ -1,0 +1,172 @@
+/* AddEmployee.css or reuse Employees.css */
+
+/* Reuse same styles as Employees */
+.AddEmployee__mainContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Montserrat", serif;
+}
+
+.AddEmployee__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.AddEmployee__body {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px; /* Example padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AddEmployee__inputContainer {
+  height: 520px;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+.AddEmployee__title {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.AddEmployee__inputTitle {
+  margin-bottom: 0;
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.AddEmployee__nameInputs {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.AddEmployee__nameInputs input {
+  height: 40px;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.AddEmployees__secondLineInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 17px;
+  gap: 30px;
+  margin-top: 30px;
+}
+.AddEmployees__secondLineInfo input {
+  height: 40px;
+  width: 200px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.AddEmployees__secondLineInfo span {
+  display: flex;
+  flex-direction: column;
+}
+
+.AddEmployees__secondLineInfo label {
+  margin-bottom: 0;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.AddEmployees__thirdLineInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 17px;
+  gap: 30px;
+}
+
+.AddEmployees__thirdLineInfo span {
+  display: flex;
+  flex-direction: column;
+}
+
+.AddEmployees__thirdLineInfo input {
+  height: 40px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.AddEmployees__thirdLineInfo label {
+  margin-bottom: 0;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.AddEmployees__lastLineInfo {
+margin-left: 17px;
+margin-top: 30px;
+}
+
+.AddEmployees__lastLineInfo input{
+    height: 40px;
+  width: 430px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.AddEmployees__lastLineInfo label{
+    font-size: 15px;
+    font-weight: 500; 
+}
+
+.AddEmployees__addEmplyee{
+    height: 50px;
+    width: 200px;
+    border: none;
+    background-color: rgb(59 130 246);
+    margin-left: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.addEmployeeButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;  
+}
+
+.AddEmployees__addEmplyee:hover {
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+  }

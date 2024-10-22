@@ -13,6 +13,11 @@
   flex-grow: 1; /* Take up the remaining space next to the sidebar */
 }
 
+.Employees__content a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Ensures the text color remains consistent */
+}
+
 .Employees__mainContainer > .Components__SideBar {
   width: 250px; /* Fixed width for the sidebar */
   height: 100%; /* Full height */
