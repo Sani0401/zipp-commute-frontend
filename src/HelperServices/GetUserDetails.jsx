@@ -1,8 +1,9 @@
 import {jwtDecode} from "jwt-decode";
 
-const getUserDetailsFromToken = (token) => {
+const getUserDetailsFromToken = () => {
   try {
     // Decode the token
+    const token = localStorage.getItem("userToken")
     const decodedData = jwtDecode(token);
     
     // Return the decoded data

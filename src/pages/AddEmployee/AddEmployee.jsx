@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Components from "../../Exports/Components";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'; // Import Toastify CSS
 import "./AddEmployee.css";
 import getUserDetailsFromToken from "../../HelperServices/GetUserDetails";
 
@@ -18,11 +20,11 @@ function AddEmployee() {
   const userToken = localStorage.getItem('userToken');
   console.log("This is the user token: ", userToken);
   
-const enterpriseDetails = getUserDetailsFromToken(userToken);
-console.log("This is the enterprise details: ", enterpriseDetails);
+  const enterpriseDetails = getUserDetailsFromToken(userToken);
+  console.log("This is the enterprise details: ", enterpriseDetails);
 
-const enterpriseId = enterpriseDetails?.enterpriseDetails?.enterpriseId;
-console.log("This is the enterpriseId: ", enterpriseId);
+  const enterpriseId = enterpriseDetails?.enterpriseDetails?.enterpriseId;
+  console.log("This is the enterpriseId: ", enterpriseId);
 
   const handleChange = (e) => {
     setEmployeeData({
@@ -45,11 +47,24 @@ console.log("This is the enterpriseId: ", enterpriseId);
         gender: employeeData.gender,
         workLocation: employeeData.workLocation,
         address: employeeData.address,
-        enterpriseId: enterpriseId // Add enterpriseId if needed
+        enterpriseId: enterpriseId
       });
+      
+      // Show success toast notification
+      toast.success("Employee added successfully!", {
+        position: "top-right",
+        autoClose: 3000, // Closes after 3 seconds
+      });
+
       console.log("Employee added successfully:", response.data);
     } catch (error) {
       console.error("Error adding employee:", error.response?.data || error.message);
+
+      // Show error toast notification
+      toast.error("Something went wrong while adding the employee!", {
+        position: "top-right",
+        autoClose: 3000, // Closes after 3 seconds
+      });
     }
   };
 
@@ -161,6 +176,8 @@ console.log("This is the enterpriseId: ", enterpriseId);
           </form>
         </div>
       </div>
+      {/* Toast Container for notifications */}
+      <ToastContainer />
     </div>
   );
 }

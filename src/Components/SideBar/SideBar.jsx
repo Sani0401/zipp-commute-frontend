@@ -16,10 +16,10 @@ navigate("/employees")
           <p>Employees</p>
         </span>
         <span className="SideBar__listElement">
-          <p>Rides</p>
+          <p>Roaster</p>
         </span>
         <span className="SideBar__listElement">
-          <p>Roaster</p>
+          <p>Rides</p>
         </span>
         <span className="SideBar__listElement">
           <p>Notification</p>
