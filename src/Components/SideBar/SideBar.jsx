@@ -15,7 +15,9 @@ navigate("/employees")
         }}>
           <p>Employees</p>
         </span>
-        <span className="SideBar__listElement">
+        <span className="SideBar__listElement" onClick={() =>{
+          navigate("/roaster")
+        }}>
           <p>Roaster</p>
         </span>
         <span className="SideBar__listElement">

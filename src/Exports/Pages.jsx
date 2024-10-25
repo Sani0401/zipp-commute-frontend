@@ -5,6 +5,7 @@ import Dashboard from "../pages/Dashboard/Dashboard";
 import Employees from "../pages/Employees/Employees";
 import EmployeeDetails from "../pages/EmployeeDetails/EmployeeDetails";
 import AddEmployee from "../pages/AddEmployee/AddEmployee";
+import Roaster from "../pages/Roaster/Roaster";
 const Pages = {
     Login,
     Signup,
@@ -12,6 +13,7 @@ const Pages = {
     Dashboard,
     Employees,
     EmployeeDetails,
-    AddEmployee
+    AddEmployee,
+    Roaster
 }
 export default Pages;

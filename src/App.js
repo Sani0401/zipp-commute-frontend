@@ -11,7 +11,9 @@ function App() {
         <Route path="/dashboard" element={<Pages.Dashboard />} />
         <Route path="/employees" element={<Pages.Employees />} />
         <Route path="/employees/:id" element={<Pages.EmployeeDetails />} /> 
-        <Route path="/add-employees" element={<Pages.AddEmployee />} /> 
+        <Route path="/add-employees" element={<Pages.AddEmployee />} />
+        <Route path="/roaster" element={<Pages.Roaster />} />
+         
       </Routes>
     </Router>
   );
