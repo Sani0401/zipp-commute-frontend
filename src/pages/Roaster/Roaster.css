@@ -46,24 +46,70 @@
     font-weight: 600;
     margin-bottom: 20px;
   }
+  .Roaster__label{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
   
   .Roaster__numEmployeesSelect {
     margin: 10px 0;
     padding: 5px;
     width: 120px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .Roaster__employeesDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
   }
   
   .Roaster__employeeInputs {
     display: flex;
     gap: 10px;
-    margin-bottom: 10px;
+    flex-direction: row;
+    margin-top: 20px;
   }
   
   .Roaster__employeeInputs input {
     padding: 5px;
-    width: 200px;
+    width: 250px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+  }
+
+  .Roaster__picupDropTime{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .Roaster__picupDropTime label{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
   }
   
+
+  .Roaster__picupDropTime input{
+    height: 35px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
   .Roaster__createButton {
     margin-top: 20px;
     padding: 10px 20px;
