@@ -3,12 +3,12 @@ import Components from "../../Exports/Components"; // Adjust path if needed
 import "./Roaster.css";
 import axios from "axios";
 import getUserDetailsFromToken from "../../HelperServices/GetUserDetails";
+import { ToastContainer, toast } from "react-toastify";
 function Roaster() {
   const [numEmployees, setNumEmployees] = useState(3);
   const [employeeDetails, setEmployeeDetails] = useState([]);
   const [pickupTime, setPickupTime] = useState("");
   const [dropTime, setDropTime] = useState("");
-  const [employees, setEmployees] = useState([]);
   // Initialize employee details on mount and when numEmployees changes
   useEffect(() => {
     setEmployeeDetails(new Array(numEmployees).fill({ name: "" }));
@@ -28,35 +28,34 @@ function Roaster() {
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const userDetails = getUserDetailsFromToken();
+    const enterpriseId = userDetails.enterpriseDetails.enterpriseId;
     console.log("Employee Roster:", employeeDetails);
     console.log("Pickup Time:", pickupTime);
     console.log("Drop Time:", dropTime);
-    // Add logic here to handle form submission (e.g., sending data to an API)
-  };
-
-  const getEmployees = async () => {
-    try {
-      const userDetails = getUserDetailsFromToken();
-      const enterpriseId = userDetails.enterpriseDetails.enterpriseId;
-      const response = await axios.get(
-        `http://localhost:3001/api/v1/admin/employees?enterpriseId=${enterpriseId}`
-      );
-      setEmployees(response.data.employees);
-    } catch (error) {
-      console.log("omething went wrong: ", error);
+    const roasterData = {
+      employeeDetails,
+      pickupTime,
+      dropTime,
+    };
+    const roasterResponse = await axios.post(
+      "http://localhost:3001/api/v1/admin/create-roaster",
+      { employeeDetails, pickupTime, dropTime, enterpriseId }
+    );
+    if (roasterResponse.status == 200) {
+      toast.success("Roaster created successfully!", {
+        position: "top-right",
+        autoClose: 3000, // Closes after 3 seconds
+      });
+    } else {
+      toast.error("Error creating roaster", {
+        position: "top-right",
+        autoClose: 3000, // Closes after 3 seconds
+      });
     }
   };
-
-  useEffect(() => {
-    getEmployees();
-  }, []);
-
-  if( employees){
-    console.log("These are the fetched employees: ", employees);
-    
-  }
 
   return (
     <div className="Roaster__mainContainer">
@@ -64,7 +63,9 @@ function Roaster() {
       <div className="Roaster__content">
         <Components.Header />
         <div className="Roaster__body">
-          <h4 className="Roaster__creationTitle">Create an Employee Roster</h4>
+          <span className="Roaster__title__roaster__button"> <h4 className="Roaster__creationTitle">Create an Employee Roster</h4>
+          <button className="Roaster__Button">See Roaster</button></span>
+         
           <form onSubmit={handleSubmit}>
             <label className="Roaster__label">
               Number of Employees:
@@ -124,6 +125,7 @@ function Roaster() {
           </form>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }

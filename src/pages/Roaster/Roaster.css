@@ -46,6 +46,23 @@
     font-weight: 600;
     margin-bottom: 20px;
   }
+
+  .Roaster__title__roaster__button{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Roaster__Button{
+    height: 40px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
   .Roaster__label{
     display: flex;
     flex-direction: row;
