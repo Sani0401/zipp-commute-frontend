@@ -33,8 +33,8 @@
 .Roaster__body {
   flex-grow: 1;
   overflow-y: auto;
-  padding: 20px;
 }
+
 
 .Roaster__body h2 {
   margin-bottom: 20px;
@@ -55,12 +55,38 @@
     align-items: center;
   }
 
+  .Roaster__title__roaster__button__div{
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Roaster__title__roaster__button__div h4{
+    margin-left: 20px;
+  }
+ 
   .Roaster__Button{
     height: 40px;
     width: 150px;
-    border: 1px solid #ccc;
+   color: white;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 20px;
+    background-color: #3b82f6;
+    border: none;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+  }
+
+  .Roaster__Button:hover{
+    background-color: #1e6ed0;
+  }
+
+  .Roaster__form{
+    margin-left: 20px;
   }
 
   .Roaster__label{

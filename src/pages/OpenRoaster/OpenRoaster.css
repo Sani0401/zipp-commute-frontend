@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.OpenRoaster__mainContainer {
+  display: flex; /* Align the sidebar and content side by side */
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  font-family: "Montserrat", serif;
+}
+
+.OpenRoaster__content {
+  display: flex;
+  flex-direction: column; /* Stack the header and body vertically */
+  flex-grow: 1; /* Take up the remaining space next to the sidebar */
+}
+
+.OpenRoaster__mainContainer > .Components__SideBar {
+  width: 250px; /* Fixed width for the sidebar */
+  height: 100%; /* Full height */
+}
+
+.OpenRoaster__mainContainer > .Components__Header {
+  height: 60px; /* Set height for the header */
+  width: 100%; /* Full width within the content area */
+  border-bottom: 1px solid black;
+}
+
+.OpenRoaster__body {
+  flex-grow: 1; /* Allow this section to grow */
+  overflow-y: auto; /* Enable scrolling if the content overflows */
+}

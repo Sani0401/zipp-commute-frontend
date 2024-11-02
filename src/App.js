@@ -13,7 +13,7 @@ function App() {
         <Route path="/employees/:id" element={<Pages.EmployeeDetails />} /> 
         <Route path="/add-employees" element={<Pages.AddEmployee />} />
         <Route path="/roaster" element={<Pages.Roaster />} />
-         
+         <Route path="/open-roaster" element={<Pages.OpenRoaster/>}/>
       </Routes>
     </Router>
   );
