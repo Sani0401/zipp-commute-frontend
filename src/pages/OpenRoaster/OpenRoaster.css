@@ -28,3 +28,11 @@
   flex-grow: 1; /* Allow this section to grow */
   overflow-y: auto; /* Enable scrolling if the content overflows */
 }
+
+.Roaster__item {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
