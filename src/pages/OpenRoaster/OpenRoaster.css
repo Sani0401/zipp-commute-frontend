@@ -30,9 +30,20 @@
 }
 
 .Roaster__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
     padding: 20px;
     border-bottom: 1px solid #ccc;
     font-size: 15px;
     font-weight: 500;
+    font-family: "Montserrat", serif;
+    
+  }
+
+  .Roaster__item:hover{
+    background-color: rgba(204, 204, 204, 0.15);
+    cursor: pointer;
   }
   

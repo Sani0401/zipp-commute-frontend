@@ -7,12 +7,15 @@ function OpenRoaster() {
   const [roasters, setRoasters] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  const [employeeCount, setEmployeeCount] = useState();
   // Fetch the roaster data on component mount
+  useEffect(() => {
+    console.log("This is the roaster: ", roasters);
+  }, [roasters]);
   useEffect(() => {
     const fetchRoasters = async () => {
       try {
-        const userDetails = getUserDetailsFromToken(); 
+        const userDetails = getUserDetailsFromToken();
         const enterpriseId = userDetails.enterpriseDetails.enterpriseId;
         const response = await axios.get(
           `http://localhost:3001/api/v1/admin/get-roaster?enterpriseId=${enterpriseId}`
@@ -58,13 +61,13 @@ function OpenRoaster() {
         <Components.Header />
         <div className="Employees__body">
           <div className="Employees__firstTab">
-            <p>Open Roaster</p>
+            <p>Active Roaster</p>
           </div>
 
           {roasters.map((roaster) => (
             <div key={roaster.roaster_id} className="Roaster__item">
-              <p>Roaster ID: {roaster.roaster_id}</p>
-              <p>Number of Employees: {roaster.employees.length}</p>
+              <p>{roaster.roaster_id}</p>
+             
             </div>
           ))}
         </div>
