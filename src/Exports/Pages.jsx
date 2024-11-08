@@ -7,6 +7,9 @@ import EmployeeDetails from "../pages/EmployeeDetails/EmployeeDetails";
 import AddEmployee from "../pages/AddEmployee/AddEmployee";
 import Roaster from "../pages/Roaster/Roaster";
 import OpenRoaster from "../pages/OpenRoaster/OpenRoaster";
+
+// Admin Pages
+import Home from "../pages/Admin/Home/Home";
 const Pages = {
     Login,
     Signup,
@@ -16,6 +19,7 @@ const Pages = {
     EmployeeDetails,
     AddEmployee,
     Roaster,
-    OpenRoaster
+    OpenRoaster,
+    Home
 }
 export default Pages;

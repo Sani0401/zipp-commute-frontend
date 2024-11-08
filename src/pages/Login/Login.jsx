@@ -7,10 +7,9 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  useEffect(() =>{
+  useEffect(() => {
     const userID = localStorage.getItem("userID");
-  
-  }, [])
+  }, []);
   const handleLogin = async () => {
     const response = await axios.post(
       "http://localhost:3001/api/v1/auth/login",
@@ -19,9 +18,19 @@ export default function Login() {
     if (response.status == 400) {
       alert("Incorrect Password!!");
     } else {
-      console.log("This is the API response: ",response);
-      localStorage.setItem("userToken", response.data.userToken)
-     // navigate("/dashboard");
+      console.log("This is the API response: ", response);
+      localStorage.setItem("userToken", response.data.userToken);
+      console.log(
+        "This is the super admin check: ",
+        response.data.isSuperAdmin
+      );
+
+      if (response.data.isSuperAdmin) {
+        navigate("/admin/home");
+        return;
+      }
+      navigate("/dashboard");
+      return;
     }
   };
   return (

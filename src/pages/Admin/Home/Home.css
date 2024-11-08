@@ -1,0 +1,29 @@
+.Home__mainContainer {
+  display: flex; /* Sidebar and content side by side */
+  height: 100vh;
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Home__content {
+  display: flex;
+  flex-direction: column; /* Stack header and body */
+  flex-grow: 1;
+}
+
+.Home__body {
+  flex-grow: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.Home__content > .Components__Header {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.Home__body h2 {
+  margin-bottom: 20px;
+}

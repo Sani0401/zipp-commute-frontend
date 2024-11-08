@@ -10,10 +10,11 @@ function App() {
         <Route path="/company-details" element={<Pages.CompanyDetails />} />
         <Route path="/dashboard" element={<Pages.Dashboard />} />
         <Route path="/employees" element={<Pages.Employees />} />
-        <Route path="/employees/:id" element={<Pages.EmployeeDetails />} /> 
+        <Route path="/employees/:id" element={<Pages.EmployeeDetails />} />
         <Route path="/add-employees" element={<Pages.AddEmployee />} />
         <Route path="/roaster" element={<Pages.Roaster />} />
-         <Route path="/open-roaster" element={<Pages.OpenRoaster/>}/>
+        <Route path="/open-roaster" element={<Pages.OpenRoaster />} />
+        <Route path="/admin/home" element={<Pages.Home />} />
       </Routes>
     </Router>
   );
