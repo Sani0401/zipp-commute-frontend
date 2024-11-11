@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 .Home__mainContainer {
   display: flex; /* Sidebar and content side by side */
   height: 100vh;
@@ -13,7 +15,7 @@
 
 .Home__body {
   flex-grow: 1;
-  padding: 20px;
+
   box-sizing: border-box;
   overflow-y: auto;
 }
@@ -24,6 +26,87 @@
   border-bottom: 1px solid black;
 }
 
-.Home__body h2 {
-  margin-bottom: 20px;
+.Home__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  cursor: pointer;
 }
+
+.Home__title__text {
+  margin: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.Home__enterprise_search{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  gap: 10px;
+}
+
+.Home__enterprise__input{
+  height: 30px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.Home__enterprise__input__button{
+  height: 30px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3b82f6;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.Home__enterprise__input__button:hover{
+  background-color: #1e6ed0;
+}
+
+.Home__enterpriseItem{
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Home__enterpriseItem h5{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.Home__enterpriseItem p{
+  margin-right: 20px;
+}
+.Home__enterpriseItem span{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.Home__enterpriseItem span:hover{
+  background-color: rgba(204, 204, 204, 0.15);
+}
+

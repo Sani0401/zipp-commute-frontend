@@ -10,6 +10,7 @@ import OpenRoaster from "../pages/OpenRoaster/OpenRoaster";
 
 // Admin Pages
 import Home from "../pages/Admin/Home/Home";
+import EnterpriseDetails from "../pages/Admin/Home/Enterprise/EnterpriseDetails";
 const Pages = {
     Login,
     Signup,
@@ -20,6 +21,7 @@ const Pages = {
     AddEmployee,
     Roaster,
     OpenRoaster,
-    Home
+    Home,
+    EnterpriseDetails
 }
 export default Pages;
