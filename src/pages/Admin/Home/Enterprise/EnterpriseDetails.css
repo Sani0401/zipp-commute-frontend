@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.EnterpriseDetails__mainContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.EnterpriseDetails__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.EnterpriseDetails__body {
+  flex-grow: 1;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.EnterpriseDetails__enterpriseTitle {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enterpriseDetails_roasterButton {
+  margin-right: 20px;
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  color: white;
+ background-color: #1e6ed0;
+  border: none;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.enterpriseDetails_roasterButton:hover {
+  background-color: rgb(59 130 246);
+}
+
+.EnterpriseDetails__enterpriseTitle h4 {
+  margin-left: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  margin-left: 20px;
+  position: relative;
+}
+
+.EnterpriseDetails__dataDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px;
+  gap: 40px;
+}
+.EnterpriseDetails__dataDiv__first {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.enterpriseName {
+  width: 400px;
+  height: 45px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.enterpriseLocation {
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.EnterpriseDetails__dataDiv__second {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.enterpriseState {
+  height: 45px;
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.enterpriseCountry {
+  height: 45px;
+  width: 250px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.enterpriseCount {
+  height: 45px;
+  width: 500px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
