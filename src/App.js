@@ -16,7 +16,7 @@ function App() {
         <Route path="/open-roaster" element={<Pages.OpenRoaster />} />
         <Route path="/admin/home" element={<Pages.Home />} />
         <Route path="/enterprise/:enterpriseId" element={<Pages.EnterpriseDetails />} />
-
+        <Route path="/enterprise/enterprise-roasters" element={<Pages.EnterpriseRoaster />} />
       </Routes>
     </Router>
   );

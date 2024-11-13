@@ -11,6 +11,7 @@ import OpenRoaster from "../pages/OpenRoaster/OpenRoaster";
 // Admin Pages
 import Home from "../pages/Admin/Home/Home";
 import EnterpriseDetails from "../pages/Admin/Home/Enterprise/EnterpriseDetails";
+import EnterpriseRoaster from "../pages/Admin/EnterpriseRoasters/EnterpriseRoaster";
 const Pages = {
     Login,
     Signup,
@@ -22,6 +23,7 @@ const Pages = {
     Roaster,
     OpenRoaster,
     Home,
-    EnterpriseDetails
+    EnterpriseDetails,
+    EnterpriseRoaster
 }
 export default Pages;
