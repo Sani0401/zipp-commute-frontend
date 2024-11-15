@@ -9,8 +9,9 @@ function EnterpriseRoaster() {
       <div className="EnterpriseRoaster__content">
         <Components.Header />
         <div className="EnterpriseRoaster__body">
-          <h4>Enterprise Roaster</h4>
-          {/* Add your content for the Enterprise Roaster page here */}
+          <div className="EnterpriseRoaster__title">
+            <h4>Enterprise Roasters</h4>
+          </div>
         </div>
       </div>
     </div>

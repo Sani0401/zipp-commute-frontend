@@ -13,7 +13,20 @@
   
   .EnterpriseRoaster__body {
     flex-grow: 1;
-    padding: 20px;
+ 
     overflow-y: auto;
   }
   
+  .EnterpriseRoaster__title {
+    height: 72px; /* Set the title div height */
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .EnterpriseRoaster__title h4 {
+    margin: 20px; /* Removes any default margin from h4 */
+  }
+  
+ 
